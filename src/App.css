@@ -14,9 +14,9 @@
 
 body {
   font-family: var(--font-roboto);
-  /* Use either of the following backgrounds */
-  background-color: rgba(0, 0, 139, 0.8); /* Solid transparent blue */
-  /* background: linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.1)); /* Gradient transparent blue */
+  
+  background-color: black; 
+  
   backdrop-filter: blur(10px);
 }
 
