@@ -14,12 +14,14 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  /* Use either of the following backgrounds */
+  background-color: rgba(0, 0, 139, 0.8); /* Solid transparent blue */
+  /* background: linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.1)); /* Gradient transparent blue */
+  backdrop-filter: blur(10px);
 }
 
 .app {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,11 +45,9 @@ h1 {
 .search {
   width: 71%;
   margin: 4rem 0 2rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
   background: #1f2123;
@@ -62,7 +62,6 @@ h1 {
   font-family: var(--font-raleway);
   font-weight: 500;
   padding-right: 1rem;
-
   outline: none;
   color: #a1a1a1;
   background: #1f2123;
@@ -92,7 +91,6 @@ h1 {
 .empty {
   width: 100%;
   margin-top: 3rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +105,6 @@ h1 {
 .container {
   width: 100%;
   margin-top: 3rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,12 +115,10 @@ h1 {
   width: 310px;
   height: 460px;
   margin: 1.5rem;
-
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   border: none;
-
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
@@ -156,7 +151,6 @@ h1 {
   z-index: 2;
   background-color: #343739;
   padding: 16px 24px 24px 24px;
-
   position: absolute;
   bottom: 0;
   right: 0;
@@ -225,7 +219,7 @@ h1 {
   }
 
   .movie {
-    width: "100%";
+    width: 100%;
     margin: 1rem;
   }
 }
